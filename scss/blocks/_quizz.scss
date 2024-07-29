@@ -5,6 +5,8 @@
     width: 500px;
     box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 
+    user-select: none;
+
     &__progress-bar {
         margin-bottom: 15px;
     }
@@ -29,6 +31,29 @@
         &:hover {
             cursor: pointer;
             border-color: rgba(116, 116, 116);
+        }
+    }
+
+    &__finish {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__button {
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        background-color: #d10061;
+        color: white;
+        font-weight: 500;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
         }
     }
 }
